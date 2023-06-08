@@ -1,0 +1,15 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "tabs": false,
+  "semi": false,
+  "singleQuote": false,
+  "quoteProps": "as-needed",
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "auto",
+  "importOrder": ["^react(.*)", "^@reduxjs/toolkit", "antd/(.*)", "<THIRD_PARTY_MODULES>", "@/(.*)", "@redux/reducers/(.*)", "@(.*)/(.*)","^[./ ]"],
+  "importOrderSeparation": true
+}

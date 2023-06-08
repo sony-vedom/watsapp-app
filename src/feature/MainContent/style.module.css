@@ -1,0 +1,30 @@
+.MainContentContainer {
+  overflow: hidden;
+  width: 100%;
+}
+.MainContentContainer_stretching {
+  width: 100%;
+  height: 100vh;
+}
+.MainContentContainer-Background {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(234, 233, 233);
+}
+.MainContentContainer-MainContent {
+  display: flex;
+  width: clamp(75rem, 62.078rem + 16.89vw, 93.75rem);
+  height: 87vh;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.MainContentContainer-MainContent_stretching {
+  width: 100%;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=style.module.css.map */

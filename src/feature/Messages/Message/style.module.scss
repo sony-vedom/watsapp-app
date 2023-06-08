@@ -1,0 +1,77 @@
+.MessageContainer {
+  display: grid;
+
+  &-Message {
+    justify-self: start;
+    background: #fff;
+
+    &_outgoing {
+      justify-self: end;
+    }
+  }
+}
+
+.Message {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+
+  gap: 8px;
+  width: fit-content;
+  min-width: 75px;
+  max-width: 30vw;
+  margin-top: 5px;
+  padding: 8px 8px 0;
+
+  font-size: 14px;
+  font-weight: 400;
+  word-break: break-all;
+
+  border-radius: 7.5px;
+
+  &-Body {
+    padding-bottom: 8px;
+    white-space: pre-wrap;
+
+    &_bigMessage {
+      padding-bottom: 0;
+    }
+  }
+
+  &_outgoing {
+    background: #d9fdd3;
+    grid-template-columns: 1fr 60px;
+  }
+
+  &_bigMessage {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.Data {
+  width: 35px;
+
+  align-self: end;
+  justify-self: end;
+
+  //min-width: ;
+  padding-bottom: 5px;
+  font-size: 12px;
+  color: #868686;
+
+  &-Icon {
+    position: relative;
+    bottom: 1px;
+
+    &_changeColor {
+      color: #74afda;
+    }
+  }
+
+  &_outgoing {
+    display: flex;
+    gap: 3px;
+
+    width: 50px;
+  }
+}

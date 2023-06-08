@@ -1,0 +1,49 @@
+.ContactsContainer {
+  box-sizing: border-box;
+  width: 40%;
+  height: inherit;
+  background-color: white;
+  border-right: 1px solid rgb(221, 222, 221);
+}
+.ContactsContainer_widthTablet {
+  width: 40%;
+}
+.ContactsContainer_widthMobile {
+  width: 90%;
+}
+.ContactsContainer-Contacts {
+  margin-top: 5px;
+}
+
+.Contacts {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  min-height: 90vh;
+  max-height: 90vh;
+}
+.Contacts::-webkit-scrollbar {
+  width: 3px;
+}
+.Contacts::-webkit-scrollbar-thumb {
+  background-color: #bfc2c7;
+  border-radius: 10px;
+}
+.Contacts_desktop {
+  min-height: 80vh;
+  max-height: 80vh;
+}
+.Contacts_scrollbarHidden {
+  overflow-y: hidden;
+}
+.Contacts-Swiper {
+  transform: none;
+  height: inherit;
+  transition: transform 150ms 500ms;
+}
+.Contacts-Swiper_transform {
+  transform: translateY(-70px);
+  overflow: hidden !important;
+  transition: transform 150ms 500ms;
+}
+
+/*# sourceMappingURL=style.module.css.map */

@@ -1,0 +1,23 @@
+.AuthContainer {
+  &-ContentWrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  &-Content {
+    margin: 0 auto;
+    padding: 50px;
+
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 17px 50px 0 rgb(11 20 26 / 19%), 0 12px 15px 0 rgb(11 20 26 / 24%);
+  }
+}
+
+.Content {
+  &-Header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}

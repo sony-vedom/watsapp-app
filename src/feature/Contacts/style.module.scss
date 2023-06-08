@@ -1,0 +1,57 @@
+.ContactsContainer {
+  box-sizing: border-box;
+  width: 40%;
+  height: inherit;
+
+  background-color: white;
+  border-right: 1px solid rgb(221 222 221);
+
+  &_widthTablet {
+    width: 40%;
+  }
+
+  &_widthMobile {
+    width: 90%;
+  }
+
+  &-Contacts {
+    margin-top: 5px;
+  }
+}
+
+.Contacts {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  min-height: 90vh;
+  max-height: 90vh;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #bfc2c7;
+    border-radius: 10px;
+  }
+
+  &_desktop {
+    min-height: 80vh;
+    max-height: 80vh;
+  }
+
+  &_scrollbarHidden {
+    overflow-y: hidden;
+  }
+
+  &-Swiper {
+    transform: none;
+    height: inherit;
+    transition: transform 150ms 500ms;
+
+    &_transform {
+      transform: translateY(-70px);
+      overflow: hidden !important;
+      transition: transform 150ms 500ms;
+    }
+  }
+}

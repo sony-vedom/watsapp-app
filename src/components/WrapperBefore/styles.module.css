@@ -1,0 +1,17 @@
+.WrapperBefore {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 222px;
+  background-color: rgb(189, 234, 159);
+}
+.WrapperBefore_main {
+  height: 130px;
+}
+.WrapperBefore_invisible {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.module.css.map */

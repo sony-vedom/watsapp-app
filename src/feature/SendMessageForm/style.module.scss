@@ -1,0 +1,37 @@
+.SendMessageForm {
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  align-items: end;
+  align-self: end;
+
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+
+  background-color: #f0f2f5;
+}
+
+.Btn {
+  cursor: pointer;
+
+  height: 50px;
+  margin-left: 8px;
+
+  color: #54656f;
+  text-align: center;
+  vertical-align: bottom;
+
+  background-color: transparent !important;
+  border: none;
+
+  &_none {
+    display: none;
+  }
+}
+
+.Error {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  color: #eb1717;
+}

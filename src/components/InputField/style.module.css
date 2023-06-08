@@ -1,0 +1,29 @@
+.Field {
+  display: grid;
+  gap: 7px;
+  width: 100%;
+}
+.Field-Input {
+  padding: 10px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 20px;
+  color: #424242;
+  background: #fff;
+  border: 1px solid #98999b;
+  border-radius: 4px;
+  outline: none;
+}
+.Field-Input_error {
+  border-color: #eb1717;
+}
+.Field-Error {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  color: #eb1717;
+}
+
+/*# sourceMappingURL=style.module.css.map */

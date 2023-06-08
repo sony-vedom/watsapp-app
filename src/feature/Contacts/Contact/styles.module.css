@@ -1,0 +1,39 @@
+.Contact {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  padding: 15px 15px 0;
+}
+.Contact_active {
+  background-color: #f2fcf2;
+}
+.Contact:hover {
+  background-color: #f2fcf2;
+}
+.Contact-Hr {
+  overflow-y: scroll;
+  width: 100%;
+  margin: 15px 0 0;
+  border-top: 1px solid #c0c0c0;
+}
+.Contact-Hr_active {
+  border-top: 1px solid #f2fcf2;
+}
+
+.ContactData-Item {
+  margin: 0;
+}
+
+.Message {
+  font-size: 14px;
+  color: #3d3d3d;
+  min-height: 20px;
+}
+
+.Title {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=styles.module.css.map */

@@ -1,0 +1,38 @@
+.Header {
+  width: 100%;
+  height: 150px;
+}
+.Header_mainPage {
+  height: 80px;
+}
+.Header_invisible {
+  display: none;
+}
+
+.Logo {
+  display: flex;
+  gap: 5px;
+  width: 800px;
+  min-height: 39px;
+  margin: 28px 28px auto;
+}
+.Logo-BrandName {
+  color: #438a13 !important;
+  vertical-align: center;
+}
+.Logo-BrandName:visited {
+  color: inherit;
+}
+.Logo-BrandName:hover {
+  color: #fff !important;
+}
+.Logo_mainPage {
+  margin-top: 15px;
+}
+
+.WrapperLogoIcon-Img {
+  width: 50px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=style.module.css.map */

@@ -1,0 +1,74 @@
+.Header {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+  height: 50px;
+  padding: 16px;
+
+  color: #5c6065;
+
+  background-color: #f0f2f5;
+
+  &-ListOptions {
+    padding: 5px 0;
+  }
+}
+
+.IconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(217 219 222);
+  }
+
+  &:active {
+    background-color: rgb(217 219 222);
+  }
+
+  &_active {
+    background-color: rgb(217 219 222);
+  }
+}
+
+.ListOptions {
+  position: absolute;
+  z-index: 5;
+  top: 48px;
+  right: 30px;
+
+  width: 250px;
+
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 2px rgb(116 116 116 / 20%);
+
+  &-Options {
+    cursor: pointer;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: #f0f2f3;
+    }
+
+    &:active {
+      background-color: #f0f2f3;
+    }
+  }
+
+  &_invisible {
+    display: none;
+  }
+}

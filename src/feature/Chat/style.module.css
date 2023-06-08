@@ -1,0 +1,22 @@
+.Chat {
+  display: grid;
+  width: 100%;
+  background-color: #faf9f9;
+  background-image: url("../../assets/image/backgroundImage.png");
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 16px;
+  background-color: #f0f2f5;
+}
+.Header-ContactData {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/*# sourceMappingURL=style.module.css.map */

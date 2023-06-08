@@ -1,0 +1,27 @@
+.Textarea {
+  resize: none;
+  overflow: scroll;
+  width: 100%;
+  min-height: 60px;
+  padding: 13px 0 0 12px;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 16px;
+  color: #424242;
+  vertical-align: center;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+.Textarea::-webkit-scrollbar {
+  width: 3px;
+}
+.Textarea::-webkit-scrollbar-thumb {
+  background-color: #bfc2c7;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.module.css.map */
