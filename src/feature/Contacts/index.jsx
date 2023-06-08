@@ -1,8 +1,11 @@
 import { Suspense, useEffect, useRef, useState } from "react"
+import { useDispatch } from "react-redux"
 
 import clsx from "clsx"
 
 import hooks from "@/hooks/"
+
+import { setActiveNumber } from "@redux/reducers/active"
 
 import { ReactComponent as LoaderIcon } from "@assets/icon/loader.svg"
 import Header from "@components/Header"
@@ -18,8 +21,13 @@ const Contacts = ({ active, contacts, messages }) => {
   const [height, setHeight] = useState("" | 0)
   const [isShowScrollbar, setShowScrollbar] = useState("" | 0)
 
+  const dispatch = useDispatch()
   const scrollElement = useRef()
-
+  useEffect(() => {
+    if (!active.number && contacts[0]) {
+      dispatch(setActiveNumber(contacts[0]))
+    }
+  }, [active, contacts])
   useEffect(() => {
     const scrollHeight = scrollElement.current?.scrollHeight ?? 0
     ;(async () => {
@@ -62,6 +70,7 @@ const Contacts = ({ active, contacts, messages }) => {
               previousActive={previousActive}
               active={active}
               messages={messages}
+              dispatch={dispatch}
             />
           ))}
         </div>

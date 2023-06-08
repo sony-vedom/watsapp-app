@@ -19,7 +19,7 @@ export const chat = createSlice({
     },
     addIncomingMessage: (state, action) => {
       const { number, timestamp, text, id } = action.payload
-      state.chatData[number].incoming.push({ type: "incoming", timestamp, text, id })
+      state.chatData[number]?.incoming.push({ type: "incoming", timestamp, text, id })
     },
     setStatusMessage: (state, action) => {
       const { number, id, status } = action.payload

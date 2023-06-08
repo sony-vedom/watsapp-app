@@ -8,11 +8,13 @@
   padding: 15px 15px 0;
 
   &_active {
-    background-color: #f2fcf2;
+    background-color: #f2faf2;
   }
 
-  &:hover {
-    background-color: #f2fcf2;
+  &-notActive {
+    &:hover {
+      background-color: #f9fdf9;
+    }
   }
 
   &-Hr {
@@ -21,7 +23,7 @@
     width: 100%;
     margin: 15px 0 0;
 
-    border-top: 1px solid #c0c0c0;
+    border-top: 1px solid #e5e4e4;
 
     &_active {
       border-top: 1px solid #f2fcf2;

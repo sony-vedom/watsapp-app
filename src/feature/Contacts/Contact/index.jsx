@@ -1,4 +1,4 @@
-import { useDispatch, useSelector } from "react-redux"
+import { useSelector } from "react-redux"
 
 import clsx from "clsx"
 
@@ -6,12 +6,11 @@ import { setActiveNumber } from "@redux/reducers/active"
 
 import styles from "./styles.module.scss"
 
-const Contact = ({ id, active: { number }, i, previousActive }) => {
+const Contact = ({ id, active: { number }, i, previousActive, dispatch }) => {
   const chatData = useSelector((state) => state.chat.chatData)
   const chatDataSort = [...chatData[id].outgoing, ...chatData[id].incoming].sort(
     (a, b) => new Date(a.timestamp) - new Date(b.timestamp),
   )
-  const dispatch = useDispatch()
   const standardizeMessage = (message) => {
     if (message.length > 40) {
       return `${message.substring(0, 40)}...`
@@ -23,6 +22,7 @@ const Contact = ({ id, active: { number }, i, previousActive }) => {
     <div
       className={clsx(styles.Contact, {
         [styles["Contact_active"]]: number === id,
+        [styles["Contact-notActive"]]: number !== id,
       })}
       id={id}
       onClick={() => {
