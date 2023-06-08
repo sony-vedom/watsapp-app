@@ -22,6 +22,7 @@ const AddNumberForm = ({ setShowModal, isShowModal, setDisabled }) => {
   return (
     <Formik
       initialValues={{ number: "+" }}
+      validateOnBlur={false}
       onSubmit={({ number }, { setSubmitting, setFieldError }) => {
         try {
           if (phoneUtil.isPossibleNumber(phoneUtil.parse(number, "ru"))) {
