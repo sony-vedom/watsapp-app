@@ -4,7 +4,7 @@
 
 ### Запуск
 
-В консоли ## [Node.js](https://nodejs.org/en) нужно выполнить команды:
+В консоли [Node.js](https://nodejs.org/en) нужно выполнить команды:
 
 `npm i`
 
