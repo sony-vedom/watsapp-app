@@ -44,7 +44,7 @@ const MainContent = () => {
   }
   const contacts = chatData ? Object.keys(chatData) : []
 
-  if (!idInstance && !apiTokenInstance) return <Navigate to={`/login`} />
+  if (!idInstance && !apiTokenInstance) return <Navigate to={`/`} />
 
   return (
     <div

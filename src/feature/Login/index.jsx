@@ -17,7 +17,7 @@ const Login = () => {
   }))
   const dispatch = useDispatch()
 
-  if (statusInstance === "authorized") return <Navigate to={`/`} />
+  if (statusInstance === "authorized") return <Navigate to={`/main`} />
   return (
     <div className={styles.AuthContainer}>
       <WrapperBefore />

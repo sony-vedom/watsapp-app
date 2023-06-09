@@ -9,8 +9,8 @@ import style from "./style.scss"
 
 const App = () => {
   const routeResult = createBrowserRouter([
-    { path: "/login", element: <Login /> },
-    { path: "/", element: <MainContent /> },
+    { path: "/", element: <Login /> },
+    { path: "/main", element: <MainContent /> },
   ])
   return (
     <div className={style.App}>
