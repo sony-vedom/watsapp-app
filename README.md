@@ -1,4 +1,5 @@
 ## [Ссылка на сайт](https://illustrious-beignet-431c90.netlify.app)
+## [Ссылка на описание и демонстрацию работы сайта](https://telegra.ph/Testovoe-zadanie-Green-Api-06-09)
 
 Это маленький мессенджер, основанный на Green api.
 
