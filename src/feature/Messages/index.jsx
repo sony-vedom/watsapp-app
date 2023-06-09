@@ -9,7 +9,7 @@ import Message from "@feature/Messages/Message"
 
 import styles from "./style.module.scss"
 
-const Messages = ({ messages, heightTextarea, heightChat }) => {
+const Messages = ({ messages, heightChat, heightForm }) => {
   const TypeDevise = hooks.useResultMediaQuery()
 
   const container = useRef(null)
@@ -20,10 +20,11 @@ const Messages = ({ messages, heightTextarea, heightChat }) => {
 
   const [height, setHeight] = useState()
   useEffect(() => {
+    const myHeightForm = heightForm < 100 ? 100 : heightForm
     TypeDevise === "Desktop"
-      ? setHeight(heightChat - 50 - heightTextarea)
-      : setHeight(window.innerWidth - 500 - heightTextarea)
-  }, [heightTextarea, TypeDevise, heightChat])
+      ? setHeight(heightChat - 50 - myHeightForm)
+      : setHeight(window.innerWidth - 400 - myHeightForm)
+  }, [heightChat, TypeDevise, heightForm])
 
   return (
     <div className={styles.MessagesContainer} style={{ height: `${height}px` }}>

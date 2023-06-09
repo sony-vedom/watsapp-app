@@ -22,9 +22,10 @@ const SendMessageForm = ({ setHeightForm }) => {
     }
   }
   const ref = useRef()
-  useEffect(() => {
-    setHeightForm(ref.current.clientHeight)
-  }, [ref.current?.clientHeight])
+  // useEffect(() => {
+  //   console.log(ref.current.offsetHeight)
+  //   setHeightForm(ref.current.clientHeight)
+  // }, [ref.current?.offsetHeight])
 
   return (
     <Formik
@@ -36,6 +37,9 @@ const SendMessageForm = ({ setHeightForm }) => {
     >
       {(formik) => (
         <Form
+          onChange={(e) => {
+            e.target.value === "" ? setHeightForm(100) : setHeightForm(e.target.offsetHeight)
+          }}
           ref={ref}
           className={styles.SendMessageForm}
           onKeyUp={onKeyUp(formik)}

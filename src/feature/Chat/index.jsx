@@ -8,7 +8,7 @@ import SendMessageForm from "@feature/SendMessageForm"
 import styles from "./style.module.scss"
 
 const Chat = ({ active, messages }) => {
-  const [heightTextarea, setHeightForm] = useState("" | 0)
+  const [heightForm, setHeightForm] = useState("" | 0)
   const [heightChat, setHeightChat] = useState("" | 0)
 
   const ref = useRef()
@@ -20,7 +20,7 @@ const Chat = ({ active, messages }) => {
       <div className={styles.Header}>
         <div className={styles["HeaderTotal-ContactData"]}>{`+${parseInt(active.number)}`}</div>
       </div>
-      <Messages heightChat={heightChat} heightTextarea={heightTextarea} messages={messages} />
+      <Messages heightChat={heightChat} heightForm={heightForm} messages={messages} />
       <SendMessageForm setHeightForm={setHeightForm} />
       <ModalWarning />
     </div>

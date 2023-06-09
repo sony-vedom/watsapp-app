@@ -11,7 +11,7 @@ const TextareaField = ({ name }) => {
   const [field] = useField(name)
 
   useEffect(() => {
-    if (field.value !== "") setHeight(60)
+    if (field.value === "") setHeight(0)
   }, [field.value])
 
   return (
@@ -21,9 +21,9 @@ const TextareaField = ({ name }) => {
       onInput={async (e) => {
         await setHeight(0)
         const scrollHeight = e.nativeEvent.target.scrollHeight
-        if (scrollHeight > 120) {
-          await setHeight(120)
-        } else if (scrollHeight < 120 && scrollHeight < 60) {
+        if (scrollHeight > 90) {
+          await setHeight(90)
+        } else if (scrollHeight < 90 && scrollHeight < 60) {
           await setHeight(60)
         } else {
           await setHeight(scrollHeight)
